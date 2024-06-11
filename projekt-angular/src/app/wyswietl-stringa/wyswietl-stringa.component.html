@@ -1,0 +1,11 @@
+<p>wyswietl-stringa works!</p>
+<div>
+  <input #inputElement placeholder="wpisz" />
+  <button (click)="onButtonClick(inputElement.value)">Wyswietl tablice</button>
+
+  <ul>
+    <li *ngFor="let value of inputValue"> {{value}}</li>
+  </ul>
+</div>
+
+<app-drugie-zadanie></app-drugie-zadanie>
